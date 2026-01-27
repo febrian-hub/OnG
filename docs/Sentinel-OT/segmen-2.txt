@@ -1,0 +1,80 @@
+Sentinel-OT: Segmen 2 - Network, SCADA & DCS (Ultimate Open-Source Plan)
+I. OPEN-SOURCE FRAMEWORK & TOOLS (The Engine)
+• Network Emulation: Containerlab & GNS3 (Simulasi switch/router industri & firewall).
+
+• Traffic Analysis & IDS: Zeek (Bro) & Suricata (Deep Packet Inspection & Network Security Monitoring).
+
+• SCADA/HMI: ScadaBR / OSHMI (Visualisasi kontrol & monitoring).
+
+• DCS Orchestration: Tango Controls (Simulasi sistem kontrol terdistribusi).
+
+• Protocol Stacks: Opendnp3 (DNP3), Libiec61850 (IEC 61850), PyModbus (Modbus).
+
+• Honeypot: Conpot (ICS Honeypot).
+
+• SIEM & Visualization: ELK Stack (Elasticsearch, Logstash, Kibana) & Grafana.
+
+• Packet Manipulation: Scapy & TShark.
+
+II. 25 MODUL STRATEGIS (Ultimate Networking)
+1. Multi-Protocol DPI: Bedah paket Modbus, S7, DNP3, IEC 104, & BACnet via Zeek.
+
+2. Alarm Suppression Detector: Deteksi pembungkaman alarm di sisi SCADA.
+
+3. HMI Integrity & Web-Attack Guard: Monitoring XSS/Injection pada portal HMI.
+
+4. Engineering Workstation (EWS) Audit: Tracking aktivitas akses logic DCS.
+
+5. DCS Redundancy Consistency: Monitoring sinkronisasi controller primary/secondary.
+
+6. False Data Injection Detector: Verifikasi konsistensi nilai HMI vs Register PLC.
+
+7. Lateral Movement Tracer: Visualisasi perpindahan trafik antar zona sel produksi.
+
+8. Digital Twin Process Sync: Animasi SVG mesin yang sinkron dengan data real-time.
+
+9. DNP3 Secure Auth Audit: Monitoring keamanan protokol WAN SCADA.
+
+10. Historian Log Integrity: Perlindungan database historis dari modifikasi ilegal.
+
+11. Forbidden Path Detection: Alert akses langsung Level 2 ke Level 0.
+
+12. Zoning & Conduit Auditor: Verifikasi segmentasi jaringan (IEC 62443).
+
+13. Industrial Honeypot Manager: Monitoring deteksi serangan pada Conpot.
+
+14. Network Resilience Monitor: Deteksi Broadcast Storm & Latency Spike.
+
+15. Automated PCAP Forensics: Perekaman otomatis saat insiden terdeteksi.
+
+16. Industrial Firewall Auditor: Audit ruleset pada virtual firewall (pfsense/vyos).
+
+17. OT DMZ Boundary Monitor: Pengawasan trafik IT-OT bridge.
+
+18. Redundancy Protocol Integrity: Monitoring PRP/HSR (Parallel Redundancy).
+
+19. Rogue AP & Wireless Detector: Deteksi Wi-Fi liar di area pabrik (Kismet).
+
+20. Private 5G/IIoT Security: Monitoring trafik nirkabel industri (MQTT/CoAP).
+
+21. Port Security & SNMP Auditor: Monitoring status fisik port switch industri.
+
+22. Industrial DNS/NTP Protector: Deteksi spoofing pada layanan waktu & nama.
+
+23. Micro-segmentation Validator: Verifikasi isolasi antar sel manufaktur.
+
+24. Zero Trust OT Broker: Implementasi identitas perangkat sebelum komunikasi.
+
+25. Network Vulnerability Scanner: Scanning kerentanan pada network devices (OpenVAS).
+
+III. IMPLEMENTASI VISUAL
+• Purdue-Swimlane Dashboard: Layout berbasis level industri.
+
+• Live Packet Stream: Terminal parsing paket secara real-time.
+
+• Network Heatmap: Visualisasi beban trafik & area risiko pada topologi.
+
+• Incident Playbook Overlay: Langkah mitigasi yang muncul saat deteksi anomali.
+
+IV. TECH STACK
+• Python (FastAPI), Zeek, Suricata, Next.js, ELK Stack, Containerlab.

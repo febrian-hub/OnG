@@ -1,0 +1,88 @@
+Sentinel-OT: Segmen 5 (Ultimate Master Plan - 30 Modules)
+I. GRC, RESPONSE & RECOVERY (The Resilience Hub)
+Segmen ini berfokus pada kematangan operasional, kepatuhan standar internasional, dan ketahanan sistem terhadap serangan masif.
+
+II. 30 MODUL STRATEGIS (Tanpa Kuantifikasi Risiko Finansial)
+A. Governance & Compliance (Kepatuhan & Tata Kelola)
+
+1. ISA/IEC 62443 Compliance Tracker: Monitoring kepatuhan otomatis terhadap standar OT global.
+
+2. NERC CIP Auditor: Kepatuhan khusus infrastruktur energi kritis.
+
+3. NIST SP 800-82 Framework Mapper: Pemetaan kontrol siber ke standar NIST ICS.
+
+4. OT Policy Lifecycle Manager: Digitalisasi dan tracking dokumen kebijakan/SOP.
+
+5. Asset Criticality Matrix: Penilaian aset berdasarkan dampak operasional fisik.
+
+6. Automated Compliance Reporting: Generator laporan kepatuhan otomatis untuk audit.
+
+7. Regulatory Sandboxing: Lingkungan uji coba kepatuhan sebelum implementasi riil.
+
+8. Third-party Access Governance: Kontrol ketat terhadap hak akses vendor dan pihak ketiga.
+
+B. Incident Response & Orchestration (SOAR)
+
+9. Automated OT Incident Playbooks: Alur kerja respon otomatis tanpa intervensi manual kaku.
+
+10. TheHive Integration: Manajemen kasus insiden untuk kolaborasi tim respons.
+
+11. Digital Forensics Artifact Collector: Pengumpulan bukti digital otomatis saat insiden.
+
+12. Root Cause Analysis (RCA) Engine: Algoritma pencari penyebab utama serangan.
+
+13. Crisis Communication Bridge: Notifikasi otomatis ke stakeholder dan regulator.
+
+14. Post-Mortem Evidence Preservation: Penyimpanan bukti digital jangka panjang untuk hukum.
+
+15. Automated Threat Containment: Isolasi otomatis perangkat terinfeksi dari jaringan.
+
+16. Real-time Incident Impact Mapping: Visualisasi dampak serangan terhadap proses produksi.
+
+C. Recovery & Business Continuity (Pemulihan)
+
+17. Disaster Recovery Plan (DRP) Auditor: Verifikasi kesiapan rencana pemulihan bencana.
+
+18. Backup Integrity & Hash Verifier: Cek integritas dan malware pada file backup.
+
+19. OT Golden Image Repository: Pusat penyimpanan konfigurasi aman (Baseline).
+
+20. Redundancy & Failover Health Check: Monitoring kesehatan jalur cadangan kontroler.
+
+21. Secure Restoration Gateway: Jalur terisolasi untuk proses pemulihan sistem.
+
+22. Digital Twin Recovery Simulation: Simulasi pemulihan sistem pada model virtual.
+
+23. Safe-State Restoration Logic: Otomatisasi rollback ke status operasional aman.
+
+24. Inter-agency Incident Data Sharing: Standar pertukaran data insiden dengan otoritas nasional.
+
+D. Simulation & Performance Reporting
+
+25. Virtual Tabletop Simulator: Simulasi krisis siber bagi tim operasional.
+
+26. MTTR (Mean Time To Repair) Tracker: Metrik kecepatan perbaikan pasca insiden.
+
+27. RTO (Recovery Time Objective) Monitor: Tracking waktu pemulihan terhadap target bisnis.
+
+28. Immutable Audit Trail: Log audit permanen yang tidak dapat dimanipulasi.
+
+29. Executive Risk Scorecard: Dashboard kesehatan keamanan untuk manajemen senior.
+
+30. Operational Resiliency Index: Skor akhir ketahanan total pabrik.
+
+III. IMPLEMENTASI VISUAL
+• Compliance Radar Chart: Visualisasi pemenuhan standar (IEC 62443, NIST).
+
+• Incident Timeline UI: Garis waktu dari deteksi hingga sistem pulih.
+
+• Recovery Status Bar: Progres pemulihan data real-time.
+
+• Resiliency Heatmap: Area operasional yang paling tahan terhadap gangguan.
+
+IV. TECH STACK
+• Incidents: TheHive, Cortex.
+
+• Audit: Wazuh, ELK Stack.
+
+• Visual: Next.js, D3.js, Grafana.

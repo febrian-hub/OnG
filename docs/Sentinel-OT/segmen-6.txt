@@ -1,0 +1,92 @@
+Sentinel-OT: Segmen 6 (Industry 4.0 - O&G / Mining Expert Edition)
+I. FOKUS INDUSTRI: OIL & GAS & MINING (Real Infrastructure)
+Segmen ini dirancang untuk infrastruktur kritis riil: Kilang (Refinery), Rig Lepas Pantai, Pembangkit Listrik Site (Power Plant), dan Sistem Tambang Otonom. Tanpa IoT Gateway, fokus pada konektivitas langsung Industrial Server ke Aset.
+
+II. 30 MODUL STRATEGIS (Autonomous & High-Performance)
+A. Industrial Server & Connectivity
+
+1. Industrial Edge Server Hardening: Proteksi server lapangan (Moxa/Advantech) yang terhubung langsung ke PLC/DCS.
+
+2. RTU (Remote Terminal Unit) Integrity: Monitoring keamanan pada RTU di lokasi remote dan jalur pipa (pipeline).
+
+3. Private 5G/4G Network Slicing: Proteksi jalur komunikasi seluler privat untuk operasi site terpencil.
+
+4. Satellite Communication (VSAT) Monitor: Monitoring keamanan jalur satelit untuk offshore rig dan site tambang.
+
+5. Zero Trust Server-to-Asset Architecture: Validasi identitas server lapangan sebelum akses ke pengontrol industri.
+
+B. AI-Powered Defense (Autonomous)
+
+6. Agentic AI Threat Hunter: AI otonom untuk investigasi mandiri di level server industri.
+
+7. Physics-Aware Predictive Maintenance: Korelasi antara keamanan siber dan indikasi kerusakan mekanis mesin besar.
+
+8. Adversarial AI Defense: Proteksi model AI dashboard dari manipulasi data sensor (Data Poisoning).
+
+9. Natural Language Query (NLQ): Antarmuka tanya-jawab teknis sistem keamanan berbasis bahasa alami.
+
+10. Autonomous Network Containment: Isolasi otomatis VLAN/Zoning saat terdeteksi pergerakan lateral.
+
+C. Critical Infrastructure Security
+
+11. Refinery Flare Stack Monitor: Analisis siber pada sistem pembakaran gas sisa (flaring stack).
+
+12. Internal Power Plant Grid (IEC 61850): Monitoring sistem proteksi kelistrikan pada pembangkit internal site.
+
+13. Autonomous Haulage System (AHS) Guard: Keamanan navigasi dan kontrol armada truk otonom tambang raksasa.
+
+14. Turbine Vibration-Cyber Correlation: Deteksi anomali getaran akibat manipulasi frekuensi siber pada generator.
+
+15. Pump Station Integrity Monitoring: Keamanan pada stasiun pompa jalur pipa migas jarak jauh.
+
+16. Pipeline Pressure-Cyber Sync: Korelasi tekanan pipa dengan indikasi sabotase pada sistem kontrol.
+
+17. Industrial Water & Waste Management: Keamanan pada sistem pengolahan limbah cair industri site.
+
+18. Asset Lifecycle Security: Tracking keamanan perangkat dari commissioning hingga decommissioning.
+
+19. Secure Remote Engineering Access: Gateway akses terkontrol langsung dari teknisi pusat ke server industri site.
+
+20. Energy Depletion Detector: Deteksi serangan DoS yang bertujuan menguras daya baterai sensor remote.
+
+D. Advanced Systems
+
+21. Post-Quantum Cryptography (PQC) Prep: Persiapan enkripsi tahan-kuantum untuk aset kritis berjangka 25+ tahun.
+
+22. Industrial Metaverse for Maintenance: Monitoring keamanan akses AR/VR untuk teknisi ahli secara remote.
+
+23. Digital Twin Attack Simulation: Simulasi penetrasi pada model virtual Kilang/Rig/Tambang tanpa dampak fisik.
+
+24. Time-Sensitive Networking (TSN) Auditor: Verifikasi akurasi waktu trafik kontrol deterministik (anti-jitter).
+
+25. Operational Resiliency Index: Skor ketahanan dinamis berdasarkan kondisi siber-fisik site secara real-time.
+
+26. Substation Automation Protection: Monitoring sistem proteksi kelistrikan site yang terintegrasi.
+
+27. Compressor Station Security: Monitoring keamanan unit kompresor gas pada jaringan pipa.
+
+28. Drilling Control System (DCS) Integrity: Keamanan pada sistem kontrol pengeboran (offshore/onshore).
+
+29. Conveyor System Safety Sync: Korelasi keamanan siber pada sistem conveyor tambang otomatis.
+
+30. Unified Infrastructure Security Index: Indeks kesiapan infrastruktur siber-fisik gabungan IT-OT.
+
+III. IMPLEMENTASI VISUAL (THREE.JS DIGITAL TWIN)
+• Refinery & Power Plant Structure: Visualisasi kilang kompleks dan pembangkit listrik internal dengan detail tinggi.
+
+• Dynamic Piping (No Gateway): Aliran data langsung dari Industrial Server ke pipa/tangki tanpa perantara IoT gateway.
+
+• Turbine & Generator Detail: Model turbin yang sinkron dengan getaran dan RPM riil.
+
+• AHS Fleet Tracker: Visualisasi pergerakan truk otonom di area tambang (jika skenario tambang).
+
+• HUD Asset Details: Data teknis lengkap (Merk/FW/CVE) langsung dari server lapangan yang terdeteksi.
+
+IV. TECH STACK
+• Engine: Three.js + GSAP.
+
+• Server Monitoring: Osquery + Wazuh Agent (pada Industrial Server).
+
+• Communication: Snap7, PyModbus, Libiec61850.
+
+• Analytics: TensorFlow (Anomaly Detection).

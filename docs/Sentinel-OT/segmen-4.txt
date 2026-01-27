@@ -1,0 +1,77 @@
+Sentinel-OT: Segmen 4 Ultimate - Defense, Deception & Intelligence (30 Modules)
+I. 30 MODUL STRATEGIS (Pro-Active Defense)
+1. Distributed ICS Honeypot (Conpot): Pengelolaan jaringan PLC palsu (Siemens, Schneider, DNP3) untuk mendeteksi reconnaissance.
+
+2. Honeytokens in SCADA: Umpan data (file/kredensial palsu) untuk mendeteksi akses lateral tidak sah.
+
+3. MISP Threat Intel Integration: Feed otomatis indikator ancaman (IoC) dari komunitas global (IP/Domain/Hashes).
+
+4. MITRE ATT&CK for ICS Mapper: Pemetaan otomatis deteksi serangan ke taktik & teknik matriks industri.
+
+5. OT Leak Monitor (Dark Web Sim): Simulasi deteksi kebocoran kredensial atau blueprint di forum bawah tanah.
+
+6. YARA & Sigma Rule Manager: Manajemen ruleset pendeteksi malware spesifik OT (Industroyer, BlackEnergy, PipeDream).
+
+7. OT SOC Command Center: Dashboard statistik serangan: Top Attacker, targeted protocols, and honeypot hits.
+
+8. Threat Hunting Engine: Query otomatis untuk mencari ancaman tersembunyi yang lolos dari perimeter.
+
+9. ICS-CERT Advisory Feed: Aggregator otomatis pengumuman kerentanan terbaru dari vendor OT utama (CISA).
+
+10. Bait HMI (Decoy HMI): Halaman kontrol palsu untuk mempelajari perilaku penyerang tanpa risiko fisik.
+
+11. Indicator of Compromise (IoC) Scanner: Pemindaian host industri secara periodik terhadap database malware terbaru.
+
+12. Threat Actor Intelligence: Profiling grup hacker (APT) yang spesifik menargetkan infrastruktur kritis.
+
+13. Vulnerability Prioritization (EPSS): Ranking kerentanan berdasarkan probabilitas eksploitasi nyata di lapangan.
+
+14. Deception Traffic Generator: Mengirim traffic protokol industri palsu untuk membingungkan sniffing penyerang.
+
+15. Incident Case Management (TheHive): Sistem manajemen tiket dan pelacakan respon insiden industri.
+
+16. Active Defense: Network Isolation Trigger: Otomatisasi isolasi segmen jaringan (VLAN Quarantine) via SOAR saat honeypot diserang.
+
+17. STIX/TAXII Ingestion Engine: Standar pertukaran intelijen ancaman untuk interoperabilitas antar sistem pertahanan.
+
+18. OT Sandbox Analysis (Mock Integration): Menampilkan status detonasi file mencurigakan di lingkungan virtual terisolasi.
+
+19. Decoy Historian Database: Database palsu berisi data proses fiktif untuk mendeteksi upaya spionase industri.
+
+20. Brand-Specific Threat Feed: Intelijen khusus yang difilter berdasarkan vendor aset yang dimiliki (Siemens/Schneider-only feeds).
+
+21. Automated Threat Report Generator: Pembuatan laporan ancaman bulanan otomatis untuk manajemen (PDF/Excel).
+
+22. ICS Protocol Fuzzing Detector: Deteksi upaya penyerang yang mencoba mencari celah 0-day pada protokol kontrol.
+
+23. Supply Chain Attack Intelligence: Monitoring ancaman yang menargetkan penyedia software/hardware vendor pihak ketiga.
+
+24. Geo-Fencing Threat Alert: Alert otomatis jika ada trafik masuk dari negara yang tidak berhubungan dengan operasional pabrik.
+
+25. Deception Credentials Manager: Pengelolaan password palsu yang disebarkan sebagai jebakan di direktori internal.
+
+26. OT Malware Behavioral Sandbox: Visualisasi aktivitas malware industri saat mencoba memanipulasi register PLC.
+
+27. AI-Powered Threat Correlation: Menghubungkan anomali kecil di Level 1 & Level 2 menjadi satu narasi serangan terpadu.
+
+28. Insider Threat Behavioral Decoy: Sistem yang terlihat "mudah diakses" oleh orang dalam untuk memantau aktivitas mencurigakan.
+
+29. Vulnerability Exploitability Mapper: Menghubungkan CVE aset dengan keberadaan exploit publik (Exploit-DB/Metasploit).
+
+30. Unified Threat Intelligence Graph: Visualisasi hubungan antara file, IP, domain, dan grup hacker dalam bentuk graf interaktif.
+
+II. IMPLEMENTASI VISUAL "CYBER WAR ROOM"
+• Attack World Map: Peta interaktif (Leaflet.js) yang menunjukkan asal serangan terhadap Honeypot.
+
+• MITRE ICS Heatmap: Visualisasi status keamanan berdasarkan teknik serangan yang terdeteksi.
+
+• Honeypot Replay Console: Terminal untuk melihat aktivitas penyerang di dalam decoy sistem secara real-time.
+
+• Threat Intelligence Graph: Visualisasi relasi antar indikator ancaman menggunakan D3 Force-Directed Graph.
+
+III. TECH STACK
+• Deception: Conpot, HoneyD, T-Pot.
+
+• Intelligence: MISP, TheHive, Cortex, STIX/TAXII.
+
+• Visual: Next.js, D3.js, ELK Stack (Kibana).

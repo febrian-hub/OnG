@@ -1,0 +1,62 @@
+Sentinel-OT: Segmen 1 - Asset Visibility & Vulnerability (Ultimate Master Plan)
+I. 20 MODUL STRATEGIS (Deep Visibility & Expert Level)
+1. OT Asset Inventory & Management: Identifikasi otomatis PLC, HMI, dan SCADA (Vendor, Firmware, Serial).
+
+2. Vulnerability Hub (ICS-CERT): Integrasi database kerentanan industri secara real-time.
+
+3. SBOM (Software Bill of Materials) Analyzer: Deteksi library rentan di dalam firmware vendor (Supply Chain).
+
+4. OT Patch Management & Virtual Patching: Tracking patch dan proteksi aset yang tidak bisa di-reboot.
+
+5. Cross-Zone Traffic Matrix: Visualisasi aliran data antar level Purdue Model.
+
+6. Asset EoL/EoS Tracker: Monitoring masa pakai perangkat untuk perencanaan CAPEX.
+
+7. Configuration Drift Detection: Deteksi perubahan setting atau logic PLC yang tidak terotorisasi.
+
+8. Automated Topology Mapper: Pemetaan hubungan antar perangkat secara visual.
+
+9. Dormant & Rogue Device Detector: Mencari perangkat "ghost" atau penyusup.
+
+10. Risk-Based Asset Prioritization: Ranking aset berdasarkan dampak safety & finansial.
+
+11. Shadow IT & External Exposure Scanner: Scanning kebocoran aset ke internet publik.
+
+12. Device Certificate Health: Monitoring masa berlaku sertifikat SSL/TLS perangkat OT.
+
+13. Asset Backup Status Tracker: Visibilitas status backup terbaru (Golden Image) setiap aset untuk pemulihan cepat.
+
+
+
+14. Compliance-to-Asset Mapper: Menghubungkan aset secara otomatis dengan pasal regulasi (ISA/IEC 62443).
+
+
+
+
+
+
+II. LOGIKA SIMULASI & VISUALISASI (Implementasi)
+A. Engine Simulasi (The "Real" Data)
+
+• Runtime Simulator: Gunakan OpenPLC untuk mensimulasikan PLC aktif dengan logic nyata.
+
+• Traffic Generator: Script Python (Scapy/PyModbus) untuk generate trafik heartbeat dari Siemens, Schneider, dan Rockwell.
+
+• Mock Data Riil: Sertakan profil kerentanan riil (misal: S7-1200 dengan CVE spesifik).
+
+B. Visualisasi Dashboard (The "Pro" UI)
+
+• Interactive Topology Mapper: Menggunakan D3.js dengan fitur drag-and-drop nodes.
+
+• Purdue Model Layout: Pembagian zona visual yang jelas dari Level 0 hingga Level 4.
+
+• Real-time Log Stream: Terminal-style live logs untuk ekstraksi metadata paket.
+
+III. TECH STACK SARAN
+• Backend: FastAPI (Python) + Scapy/PyModbus.
+
+• Frontend: Next.js + Tailwind CSS + D3.js.
+
+• Database: PostgreSQL & Redis.
+
+• Integrasi: API NIST NVD / ICS-CERT.

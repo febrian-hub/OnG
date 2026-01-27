@@ -1,0 +1,88 @@
+Sentinel-OT: Segmen 7 (OT Red Teaming & Forensics)
+I. PENDEKATAN: SAFETY-FIRST OFFENSIVE
+Segmen ini adalah validasi akhir dari seluruh pertahanan (Segmen 1-6). Berfokus pada simulasi serangan terkendali (Red Teaming) dan teknik investigasi siber (Forensics) khusus infrastruktur Oil & Gas dan Mining.
+
+II. 30 MODUL STRATEGIS (Pro-Architect Edition)
+A. Safety-First Reconnaissance
+
+1. Passive Asset Fingerprinting (TShark/Zeek).
+
+2. Industrial OSINT & Leak Crawler.
+
+3. Rogue Device Injection Test.
+
+4. VPN & Remote Access Probing.
+
+5. Network Segmentation Blind-Spot Finder.
+
+B. Industrial Protocol Manipulation
+
+6. Read/Write Register Hijacking (Snap7/PyModbus).
+
+7. Logic Injection & Diff Analysis.
+
+8. Industrial Protocol Fuzzing (Safe-Mode).
+
+9. Replay Attack on Command Function.
+
+10. MitM Data Spoofing (Sensor Manipulation).
+
+C. Safety Interlock & SIS Bypassing
+
+11. SIS (Safety Instrumented System) Hijacking Simulation.
+
+12. Interlock Logic Deception.
+
+13. Alarm Suppression & Silencing.
+
+14. Firmware Rollback Vulnerability Test.
+
+15. HMI Synoptic Manipulation (Visual Deception).
+
+D. Post-Incident Forensics (CSI Layer)
+
+16. OT PCAP Forensics Deep-Dive.
+
+17. Memory Forensics on SCADA/HMI (Volatility).
+
+18. PLC Forensic Artifact Collection.
+
+19. Log Correlation & Timeline Reconstruction.
+
+20. OT-Specific Malware Behavioral Analysis.
+
+E. Advanced Strategy & Resilience
+
+21. IT-to-OT Pivot Simulation.
+
+22. Supply Chain Compromise Simulation.
+
+23. Industrial Ransomware Impact Analysis.
+
+24. Cloud-OT Bridge Exploitation.
+
+25. NTP/Time Desynchronization Attack.
+
+26. Zero Trust Policy Validation.
+
+27. OT Incident Response Playbook Validation.
+
+28. Evidence-based Compliance Audit (IEC 62443).
+
+29. Cyber-Physical Consequence Modeling.
+
+30. Red-to-Blue Feedback Loop (Auto-hardening).
+
+III. IMPLEMENTASI VISUAL
+• Live Attack Path Map: Visualisasi jalur penetrasi penyerang secara real-time.
+
+• Forensic Timeline View: Rekonstruksi kejadian berbasis garis waktu interaktif.
+
+• Consequence Gauge: Indikator risiko fisik terhadap operasional kilang/site.
+
+IV. TECH STACK
+• Offensive: Metasploit ICS, ISF, Scapy, Kali Linux.
+
+• Forensic: Zeek, GRR, Volatility, Wireshark (Industrial Dissectors).
+
+• Environment: Minimega / Mininet (Network Emulation).
