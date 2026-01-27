@@ -6,9 +6,11 @@ Welcome to the OnG Project Documentation.
 
 Detailed documentation for specific system modules.
 
-- [Gas Compression & Treatment](modules/GAS_COMPRESSION_TREATMENT.md)
-- [Separation System](modules/SEPARATION_SYSTEM.md)
-- [Wellhead & Gathering Systems](modules/WELLHEAD_GATHERING_SYSTEMS.md)
+- [Gas Compression & Treatment](process/03_GAS_COMPRESSION.md)
+- [Oil Treatment & Export](process/04_OIL_TREATMENT_EXPORT.md)
+- [Produced Water Treatment](process/05_PRODUCED_WATER_TREATMENT.md)
+- [Separation System](process/02_SEPARATION_SYSTEM.md)
+- [Wellhead & Gathering Systems](process/01_WELLHEAD_GATHERING.md)
 
 ## Developer Guides
 
