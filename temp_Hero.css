@@ -1,0 +1,74 @@
+
+/* Hero Animations */
+@keyframes spin {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin 20s linear infinite;
+}
+
+.animate-spin-reverse-slower {
+  animation: spin 30s linear infinite reverse;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-hud {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+}
+
+.hero-panel {
+  border: 1px solid var(--accent-cyan);
+  background: rgba(26, 26, 26, 0.8);
+  backdrop-filter: blur(12px);
+  padding: 3rem;
+  position: relative;
+}
+
+.hero-title {
+  font-size: 4rem; /* Fallback */
+  font-size: clamp(3rem, 5vw, 6rem);
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-family: var(--font-header);
+  letter-spacing: -0.05em;
+}
+
+.hero-tag {
+  border: 1px solid var(--border-dim);
+  padding: 0.25rem 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.bg-ring-outer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 800px;
+  height: 800px;
+  border: 1px dashed var(--border-dim);
+  border-radius: 50%;
+  opacity: 0.2;
+  transform: translate(-50%, -50%); /* Base transform */
+  /* animation handled by utility class but needs transform origin or handling */
+}
+
+/* Fix for transform conflict in animation */
+/* We need the animation to Include the translate since Keyframes override it if not careful, 
+   OR put the spinner in a wrapper. 
+   Let's use the wrapper approach in JSX or just hardcode the translate in keyframes (done above) */

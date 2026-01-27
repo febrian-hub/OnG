@@ -1,0 +1,117 @@
+
+/* About Section */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  padding: 2rem;
+}
+
+.id-card {
+  background: rgba(26, 26, 26, 0.9);
+  border: 1px solid var(--border-dim);
+  width: 100%;
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  position: relative;
+  overflow: hidden;
+}
+
+.id-photo-section {
+  background: var(--bg-panel);
+  border-right: 1px solid var(--border-dim);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+}
+
+.photo-frame {
+  width: 200px;
+  height: 200px;
+  border: 2px solid var(--accent-cyan);
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.photo-placeholder {
+  font-size: 4rem;
+  color: var(--accent-cyan);
+  opacity: 0.5;
+}
+
+.id-details {
+  padding: 3rem;
+  position: relative;
+}
+
+.id-header {
+  border-bottom: 1px solid var(--border-dim);
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.id-name {
+  font-size: 2.5rem;
+  color: #fff;
+  font-family: var(--font-header);
+  line-height: 1;
+}
+
+.id-role {
+  color: var(--accent-cyan);
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+  margin-top: 0.5rem;
+}
+
+.id-bio {
+  color: var(--text-primary);
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.data-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.data-item-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.data-item-value {
+  font-family: var(--font-main);
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .id-card {
+    grid-template-columns: 1fr;
+  }
+  .id-photo-section {
+    border-right: none;
+    border-bottom: 1px solid var(--border-dim);
+  }
+}

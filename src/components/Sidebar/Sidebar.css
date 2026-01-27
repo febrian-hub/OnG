@@ -1,0 +1,270 @@
+/**
+ * Sidebar CSS Styles
+ * 
+ * Styling for profile sidebar component
+ */
+
+.profile-sidebar {
+  width: 360px;
+  background: #ffffff;
+  border-right: 1px solid #e2e8f0;
+  padding: 3rem 2rem;
+  overflow-y: auto;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
+
+/* Profile Header */
+.profile-sidebar__header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.profile-sidebar__avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.profile-sidebar__avatar-text {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: white;
+}
+
+.profile-sidebar__name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+}
+
+/* Contact Info */
+.profile-sidebar__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.profile-sidebar__contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  color: #475569;
+}
+
+.profile-sidebar__icon {
+  width: 16px;
+  height: 16px;
+  color: #64748b;
+  flex-shrink: 0;
+}
+
+.profile-sidebar__contact-text {
+  word-break: break-word;
+}
+
+.profile-sidebar__link {
+  color: #0891b2;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.profile-sidebar__link:hover {
+  color: #0e7490;
+  text-decoration: underline;
+}
+
+/* Sections */
+.profile-sidebar__section {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.profile-sidebar__section:first-of-type {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+.profile-sidebar__section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0 0 0.75rem 0;
+}
+
+.profile-sidebar__section-icon {
+  width: 18px;
+  height: 18px;
+  color: #0891b2;
+}
+
+.profile-sidebar__text {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: #64748b;
+  margin: 0;
+}
+
+/* Items */
+.profile-sidebar__item {
+  margin-bottom: 0.75rem;
+}
+
+.profile-sidebar__item:last-child {
+  margin-bottom: 0;
+}
+
+.profile-sidebar__item-title {
+  font-size: 0.813rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.25rem;
+}
+
+.profile-sidebar__item-subtitle {
+  font-size: 0.75rem;
+  color: #0891b2;
+  margin-bottom: 0.25rem;
+}
+
+.profile-sidebar__item-meta {
+  font-size: 0.688rem;
+  color: #94a3b8;
+}
+
+/* List */
+.profile-sidebar__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.profile-sidebar__list li {
+  font-size: 0.75rem;
+  color: #64748b;
+  padding-left: 1rem;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.profile-sidebar__list li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #0891b2;
+  font-weight: bold;
+}
+
+/* Tags */
+.profile-sidebar__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.profile-sidebar__tag {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  background: #f1f5f9;
+  color: #475569;
+  font-size: 0.688rem;
+  font-weight: 500;
+  border-radius: 0.25rem;
+  border: 1px solid #e2e8f0;
+}
+
+/* Footer */
+.profile-sidebar__footer {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.profile-sidebar__contact-btn,
+.profile-sidebar__linkedin-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.813rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+  text-decoration: none;
+}
+
+.profile-sidebar__contact-btn {
+  background: linear-gradient(135deg, #0d9488 0%, #0891b2 100%);
+  color: white;
+}
+
+.profile-sidebar__contact-btn:hover {
+  background: linear-gradient(135deg, #0f766e 0%, #0e7490 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.profile-sidebar__linkedin-btn {
+  background: #0077b5;
+  color: white;
+}
+
+.profile-sidebar__linkedin-btn:hover {
+  background: #006399;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.profile-sidebar__btn-icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* Scrollbar */
+.profile-sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.profile-sidebar::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+.profile-sidebar::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+.profile-sidebar::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .profile-sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-right: none;
+    border-bottom: 1px solid #e2e8f0;
+  }
+}
