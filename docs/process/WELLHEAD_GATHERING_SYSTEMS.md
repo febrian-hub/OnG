@@ -10,14 +10,14 @@ Wellhead adalah fondasi permanen di permukaan sumur, sedangkan Christmas Tree ad
 
 ### Detail Mekanikal
 
-| Komponen | Fungsi |
-|----------|--------|
-| **Casing Head** | Menahan beban berat casing |
+| Komponen        | Fungsi                                                 |
+| --------------- | ------------------------------------------------------ |
+| **Casing Head** | Menahan beban berat casing                             |
 | **Tubing Head** | Menahan beban tubing dan menyekat tekanan antar anulus |
 
 ### Christmas Tree Components
 
-![Diagram Christmas Tree (X-Mas Tree)](./christmas_tree_diagram.png)
+![Diagram Christmas Tree (X-Mas Tree)](../assets/christmas_tree_diagram.png)
 
 ```
 ┌─────────────────────────┐
@@ -50,9 +50,9 @@ Fluida yang mengalir biasanya campuran **minyak, gas, dan air**. Ini menimbulkan
 
 ### Material Selection
 
-| Material | Aplikasi |
-|----------|----------|
-| **Carbon Steel** | Standar untuk fluida non-korosif |
+| Material                            | Aplikasi                                |
+| ----------------------------------- | --------------------------------------- |
+| **Carbon Steel**                    | Standar untuk fluida non-korosif        |
 | **CRA (Corrosion Resistant Alloy)** | Inconel, Duplex SS untuk H₂S/CO₂ tinggi |
 
 ### Flow Diagram
@@ -62,7 +62,7 @@ flowchart LR
     W[Wellhead] --> F[Flowline]
     F --> M[Manifold]
     M --> S[Separator]
-    
+
     style W fill:#f9f,stroke:#333
     style S fill:#9f9,stroke:#333
 ```
@@ -87,7 +87,7 @@ flowchart TD
     B -->|Tidak / ESD| D[Tekanan Hilang]
     D --> E[Spring-Return Aktif]
     E --> F[Valve Menutup Otomatis]
-    
+
     style F fill:#f99,stroke:#333
 ```
 
@@ -100,11 +100,11 @@ flowchart TD
 
 Injeksi bahan kimia dilakukan sedini mungkin untuk mencegah masalah **Flow Assurance**.
 
-| Bahan Kimia | Fungsi |
-|-------------|--------|
+| Bahan Kimia             | Fungsi                                       |
+| ----------------------- | -------------------------------------------- |
 | **Corrosion Inhibitor** | Membentuk lapisan film tipis di dinding pipa |
-| **Scale Inhibitor** | Mencegah pengendapan mineral (CaCO₃) |
-| **Demulsifier** | Membantu memisahkan ikatan air-minyak |
+| **Scale Inhibitor**     | Mencegah pengendapan mineral (CaCO₃)         |
+| **Demulsifier**         | Membantu memisahkan ikatan air-minyak        |
 
 ---
 
@@ -114,10 +114,10 @@ Pasir adalah **musuh utama** — sifatnya abrasif dan mengikis peralatan.
 
 ### Teknologi Deteksi
 
-| Sensor | Metode |
-|--------|--------|
-| **Acoustic Sensors** | Ultrasonik mendeteksi suara hantaman pasir |
-| **Erosion Probes** | Logam tipis yang terkikis mengubah resistansi |
+| Sensor               | Metode                                        |
+| -------------------- | --------------------------------------------- |
+| **Acoustic Sensors** | Ultrasonik mendeteksi suara hantaman pasir    |
+| **Erosion Probes**   | Logam tipis yang terkikis mengubah resistansi |
 
 ### Mitigasi
 
@@ -130,7 +130,7 @@ Pasir adalah **musuh utama** — sifatnya abrasif dan mengikis peralatan.
 
 Manifold berfungsi sebagai "stasiun pemilih" untuk mengarahkan aliran.
 
-![Wellhead Gathering System / Manifold](./wellhead_gathering_manifold.png)
+![Wellhead Gathering System / Manifold](../assets/wellhead_gathering_manifold.png)
 
 ```mermaid
 flowchart LR
@@ -139,19 +139,19 @@ flowchart LR
         W2[Well 2]
         W3[Well 3]
     end
-    
+
     subgraph Manifold
         PM[Production Manifold]
         TM[Test Manifold]
     end
-    
+
     W1 --> PM
     W2 --> PM
     W3 --> TM
-    
+
     PM --> MS[Main Separator]
     TM --> TS[Test Separator]
-    
+
     style TM fill:#ff9,stroke:#333
     style TS fill:#ff9,stroke:#333
 ```
@@ -171,11 +171,11 @@ Mengetahui performa setiap sumur secara individu:
 
 ### Key Instruments
 
-| Instrumen | Fungsi |
-|-----------|--------|
-| **MPFM (Multiphase Flow Meter)** | Mengukur minyak, air, gas simultan tanpa pemisahan |
-| **PDT (Pressure Differential Transmitter)** | Mendeteksi penyumbatan (plugging) |
-| **RTU (Remote Terminal Unit)** | Komputer lapangan → mengirim data ke SCADA |
+| Instrumen                                   | Fungsi                                             |
+| ------------------------------------------- | -------------------------------------------------- |
+| **MPFM (Multiphase Flow Meter)**            | Mengukur minyak, air, gas simultan tanpa pemisahan |
+| **PDT (Pressure Differential Transmitter)** | Mendeteksi penyumbatan (plugging)                  |
+| **RTU (Remote Terminal Unit)**              | Komputer lapangan → mengirim data ke SCADA         |
 
 ### Communication Architecture
 
@@ -185,12 +185,12 @@ flowchart BT
         S1[Sensor PT/TT/FT]
         RTU[RTU]
     end
-    
+
     subgraph Control Center
         SCADA[SCADA System]
         HMI[Operator HMI]
     end
-    
+
     S1 --> RTU
     RTU -->|Radio/Satellite| SCADA
     SCADA --> HMI
@@ -202,42 +202,42 @@ flowchart BT
 
 ### Wellhead & Integrity
 
-| Referensi | Deskripsi |
-|-----------|-----------|
-| Bellarby, J. (2009). *Well Completion Design* | Standar industri untuk interface wellhead |
-| **ISO 10423 / API 6A** | Spesifikasi peralatan Wellhead & X-Mas Tree |
+| Referensi                                     | Deskripsi                                   |
+| --------------------------------------------- | ------------------------------------------- |
+| Bellarby, J. (2009). _Well Completion Design_ | Standar industri untuk interface wellhead   |
+| **ISO 10423 / API 6A**                        | Spesifikasi peralatan Wellhead & X-Mas Tree |
 
 ### Flow Assurance
 
-| Referensi | Deskripsi |
-|-----------|-----------|
-| Kelland, M. A. (2014). *Production Chemicals for the Oil and Gas Industry* | Mekanisme inhibitor korosi & scale |
-| **SPE-182851-MS** | "A Holistic Approach to Flow Assurance in Subsea Gathering Systems" |
+| Referensi                                                                  | Deskripsi                                                           |
+| -------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| Kelland, M. A. (2014). _Production Chemicals for the Oil and Gas Industry_ | Mekanisme inhibitor korosi & scale                                  |
+| **SPE-182851-MS**                                                          | "A Holistic Approach to Flow Assurance in Subsea Gathering Systems" |
 
 ### Sand Monitoring
 
-| Referensi | Deskripsi |
-|-----------|-----------|
+| Referensi         | Deskripsi                                                                   |
+| ----------------- | --------------------------------------------------------------------------- |
 | **SPE-191530-MS** | "Effective Sand Management: A Key to Maximize Production and Minimize Risk" |
 
 ### Digital Oilfield
 
-| Referensi | Deskripsi |
-|-----------|-----------|
+| Referensi                 | Deskripsi                                                     |
+| ------------------------- | ------------------------------------------------------------- |
 | Cramer, R., et al. (2012) | "The Intelligent Wells and Fields: Past, Present, and Future" |
 
 ---
 
 ## Glossary
 
-| Term | Definition |
-|------|------------|
-| **ESD** | Emergency Shutdown |
-| **SSV** | Surface Safety Valve |
-| **SSSV** | Subsurface Safety Valve |
-| **CRA** | Corrosion Resistant Alloy |
-| **MPFM** | Multiphase Flow Meter |
-| **RTU** | Remote Terminal Unit |
-| **SCADA** | Supervisory Control and Data Acquisition |
-| **bph** | Barrels per hour |
-| **mmscfd** | Million standard cubic feet per day |
+| Term       | Definition                               |
+| ---------- | ---------------------------------------- |
+| **ESD**    | Emergency Shutdown                       |
+| **SSV**    | Surface Safety Valve                     |
+| **SSSV**   | Subsurface Safety Valve                  |
+| **CRA**    | Corrosion Resistant Alloy                |
+| **MPFM**   | Multiphase Flow Meter                    |
+| **RTU**    | Remote Terminal Unit                     |
+| **SCADA**  | Supervisory Control and Data Acquisition |
+| **bph**    | Barrels per hour                         |
+| **mmscfd** | Million standard cubic feet per day      |
