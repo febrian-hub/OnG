@@ -4,7 +4,7 @@
  * Main dashboard container with feature cards grid
  */
 
-import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { FeatureCard } from './FeatureCard';
 import { ProfileSidebar } from '../Sidebar';
 import './Dashboard.css';
@@ -41,19 +41,18 @@ const ProtocolIcon = () => (
 );
 
 export const Dashboard: React.FC = () => {
+  const navigate = useNavigate();
+
   const handleLaunchSystemOverview = () => {
-    console.log('Launching System Overview module...');
-    // TODO: Navigate to System Overview page
+    navigate('/system-overview');
   };
 
   const handleLaunchPurdue = () => {
-    console.log('Launching Purdue Architecture module...');
-    // TODO: Navigate to Purdue Architecture page
+    navigate('/purdue-architecture');
   };
 
   const handleLaunchProtocol = () => {
-    console.log('Launching Protocol Communication module...');
-    // TODO: Navigate to Protocol Communication page
+    navigate('/protocol-communication');
   };
 
   return (

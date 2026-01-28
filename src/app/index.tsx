@@ -11,11 +11,17 @@ interface AppProps {
     children: React.ReactNode;
 }
 
+import { BrowserRouter } from 'react-router-dom';
+
 export function App({ children }: AppProps) {
     return (
         <StrictMode>
             <QueryProvider>
-                <AuthProvider>{children}</AuthProvider>
+                <AuthProvider>
+                    <BrowserRouter>
+                        {children}
+                    </BrowserRouter>
+                </AuthProvider>
             </QueryProvider>
         </StrictMode>
     );
