@@ -16,6 +16,7 @@ export const ProfileSidebar: React.FC = () => {
           <span className="profile-sidebar__avatar-text">FI</span>
         </div>
         <h2 className="profile-sidebar__name">Febrian Ibrahim</h2>
+        <div className="profile-sidebar__profession">IoT & Automation Engineer</div>
       </div>
 
       {/* Contact Info */}
@@ -52,11 +53,63 @@ export const ProfileSidebar: React.FC = () => {
             <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/>
             <circle cx="12" cy="7" r="4"/>
           </svg>
-          IoT & Automation Eng.
+          About Me
         </h3>
         <p className="profile-sidebar__text">
-          Experienced automation & IoT professional with 3+ years hands-on experience in industrial design, PLC Programming, and IoT development.
+          Experienced automation & IoT professional with 3+ years hands-on experience in electrical design, wiring, PLC Programming, and IoT development & devops. Seeking challenging roles to leverage technical expertise, problem solving skill and innovation.
         </p>
+      </div>
+
+      {/* Experience */}
+      <div className="profile-sidebar__section">
+        <h3 className="profile-sidebar__section-title">
+          <svg className="profile-sidebar__section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+          </svg>
+          Professional Experience
+        </h3>
+        
+        <div className="profile-sidebar__item">
+          <div className="profile-sidebar__item-title">PT. Optimaxx Prima Teknik</div>
+          <div className="profile-sidebar__item-subtitle">Software IoT Engineer</div>
+          <div className="profile-sidebar__item-meta">Dec 2024 - Present</div>
+          <ul className="profile-sidebar__list mt-1">
+            <li>Software problems solving (Web Dev, ML, Digital Twin)</li>
+            <li>Make & Custom IIoT Dashboard</li>
+          </ul>
+        </div>
+
+        <div className="profile-sidebar__item">
+          <div className="profile-sidebar__item-title">PT. Industrial Robotic Automation</div>
+          <div className="profile-sidebar__item-subtitle">Maintenance Engineer</div>
+          <div className="profile-sidebar__item-meta">Feb 2024 - Dec 2024</div>
+          <ul className="profile-sidebar__list mt-1">
+            <li>Routine repairs & maintenance on robots</li>
+            <li>Identify & analyze technical issues</li>
+            <li>Generate maintenance reports</li>
+          </ul>
+        </div>
+
+        <div className="profile-sidebar__item">
+          <div className="profile-sidebar__item-title">PT. Ragdalion Revolusi Industri</div>
+          <div className="profile-sidebar__item-subtitle">IoT Engineer</div>
+          <div className="profile-sidebar__item-meta">Aug 2023 - Feb 2024</div>
+          <ul className="profile-sidebar__list mt-1">
+            <li>OEE monitoring systems (Node-RED, SQLite, Telegram)</li>
+            <li>Electrical wiring & PLC programming (Simatic Manager)</li>
+          </ul>
+        </div>
+
+        <div className="profile-sidebar__item">
+          <div className="profile-sidebar__item-title">PT Anugerah Bestarijaya Raya</div>
+          <div className="profile-sidebar__item-subtitle">Automation Engineer</div>
+          <div className="profile-sidebar__item-meta">Apr 2021 - Jan 2023</div>
+          <ul className="profile-sidebar__list mt-1">
+            <li>Designed electrical wiring diagrams (AutoCAD)</li>
+            <li>Wiring cabinets & PLC modifications (TIA Portal)</li>
+            <li>Ladder to SCL conversion & troubleshooting</li>
+          </ul>
+        </div>
       </div>
 
       {/* Education */}
@@ -69,9 +122,12 @@ export const ProfileSidebar: React.FC = () => {
           Education
         </h3>
         <div className="profile-sidebar__item">
-          <div className="profile-sidebar__item-title">ITS Surabaya</div>
-          <div className="profile-sidebar__item-subtitle">Automation Electrical Eng.</div>
-          <div className="profile-sidebar__item-meta">GPA: 3.11 | 2018 - 2023</div>
+          <div className="profile-sidebar__item-title">Institut Teknologi Sepuluh Nopember</div>
+          <div className="profile-sidebar__item-subtitle">Automation Electrical Engineering</div>
+          <div className="profile-sidebar__item-meta">GPA: 3.11 | Aug 2018 - Mar 2023</div>
+          <p className="profile-sidebar__text mt-1">
+            Final Project: Visual inspection system to detect surface defects in gears (Pytorch, Jetson Nano, PyQt5). Accuracy 80%+.
+          </p>
         </div>
       </div>
 
@@ -84,51 +140,62 @@ export const ProfileSidebar: React.FC = () => {
           Publication
         </h3>
         <ul className="profile-sidebar__list">
-          <li>Visual Inspection System Gear Surface Defects (Faster RCNN)</li>
+          <li>Sistem Inspeksi Visual Mendeteksi Kecacatan Pada Permukaan Gear Menggunakan Metode Faster Rcnn (University Paper)</li>
+          <li>Visual Inspection System of Gear Surface Defects Detection Using Faster RCNN (International Paper)</li>
         </ul>
       </div>
 
-      {/* Arsenal/Skills */}
+      {/* Skills */}
       <div className="profile-sidebar__section">
         <h3 className="profile-sidebar__section-title">
           <svg className="profile-sidebar__section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
             <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/>
           </svg>
-          Arsenal
+          Skill
         </h3>
-        <div className="profile-sidebar__tags">
-          <span className="profile-sidebar__tag">Node.js</span>
-          <span className="profile-sidebar__tag">React</span>
-          <span className="profile-sidebar__tag">PostgreSQL</span>
-          <span className="profile-sidebar__tag">Docker</span>
-          <span className="profile-sidebar__tag">PLC</span>
-          <span className="profile-sidebar__tag">Modbus</span>
-          <span className="profile-sidebar__tag">Wireshark</span>
-          <span className="profile-sidebar__tag">ELK Stack</span>
+        
+        <div className="profile-sidebar__skill-group mb-2">
+          <strong className="profile-sidebar__group-title">Web Dev</strong>
+          <div className="profile-sidebar__tags">
+            <span className="profile-sidebar__tag">Node.js</span>
+            <span className="profile-sidebar__tag">React</span>
+            <span className="profile-sidebar__tag">Express</span>
+            <span className="profile-sidebar__tag">PostgreSQL</span>
+            <span className="profile-sidebar__tag">Grafana</span>
+          </div>
         </div>
-      </div>
 
-      {/* Contact Button */}
-      <div className="profile-sidebar__footer">
-        <button className="profile-sidebar__contact-btn">
-          <svg className="profile-sidebar__btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-            <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-          </svg>
-          Contact
-        </button>
-        <a 
-          href="https://www.linkedin.com/in/febrian-ibrahim/" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="profile-sidebar__linkedin-btn"
-        >
-          <svg className="profile-sidebar__btn-icon" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
-            <circle cx="4" cy="4" r="2"/>
-          </svg>
-          LinkedIn
-        </a>
+        <div className="profile-sidebar__skill-group mb-2">
+          <strong className="profile-sidebar__group-title">DevOps & IoT</strong>
+          <div className="profile-sidebar__tags">
+            <span className="profile-sidebar__tag">Docker</span>
+            <span className="profile-sidebar__tag">Git</span>
+            <span className="profile-sidebar__tag">Jenkins</span>
+            <span className="profile-sidebar__tag">MQTT</span>
+            <span className="profile-sidebar__tag">Data Analytic</span>
+          </div>
+        </div>
+
+        <div className="profile-sidebar__skill-group mb-2">
+          <strong className="profile-sidebar__group-title">Automation</strong>
+          <div className="profile-sidebar__tags">
+            <span className="profile-sidebar__tag">Ladder & ST</span>
+            <span className="profile-sidebar__tag">Modbus</span>
+            <span className="profile-sidebar__tag">DNP3</span>
+            <span className="profile-sidebar__tag">AutoCAD</span>
+          </div>
+        </div>
+
+        <div className="profile-sidebar__skill-group">
+          <strong className="profile-sidebar__group-title">Security</strong>
+          <div className="profile-sidebar__tags">
+            <span className="profile-sidebar__tag">Wireshark</span>
+            <span className="profile-sidebar__tag">Nmap</span>
+            <span className="profile-sidebar__tag">ELK Stack</span>
+            <span className="profile-sidebar__tag">Metasploit</span>
+          </div>
+        </div>
       </div>
     </aside>
   );

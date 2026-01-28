@@ -33,6 +33,13 @@ const NetworkIcon = () => (
   </svg>
 );
 
+const ProtocolIcon = () => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <polyline points="16 18 22 12 16 6" />
+    <polyline points="8 6 2 12 8 18" />
+  </svg>
+);
+
 export const Dashboard: React.FC = () => {
   const handleLaunchSystemOverview = () => {
     console.log('Launching System Overview module...');
@@ -42,6 +49,11 @@ export const Dashboard: React.FC = () => {
   const handleLaunchPurdue = () => {
     console.log('Launching Purdue Architecture module...');
     // TODO: Navigate to Purdue Architecture page
+  };
+
+  const handleLaunchProtocol = () => {
+    console.log('Launching Protocol Communication module...');
+    // TODO: Navigate to Protocol Communication page
   };
 
   return (
@@ -83,6 +95,21 @@ export const Dashboard: React.FC = () => {
               { color: '#facc15', text: 'Network Segmentation' }
             ]}
             onLaunch={handleLaunchPurdue}
+          />
+
+          {/* Protocol Communication Card */}
+          <FeatureCard
+            icon={<ProtocolIcon />}
+            iconBgClass="feature-card__icon--purple"
+            label="INDUSTRIAL PROTOCOLS"
+            title="Protocol Communication"
+            description="Interactive learning and analysis regarding industrial protocols (Modbus, DNP3, OPC UA)."
+            features={[
+              { color: '#7c3aed', text: 'Protocol Simulators' },
+              { color: '#8b5cf6', text: 'Packet Analysis' },
+              { color: '#a78bfa', text: 'Security Checkups' }
+            ]}
+            onLaunch={handleLaunchProtocol}
           />
         </div>
       </div>

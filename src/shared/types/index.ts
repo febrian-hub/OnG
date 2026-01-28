@@ -80,8 +80,8 @@ export interface User {
     email: string;
     name: string;
     avatar?: string;
-    createdAt: string;
-    updatedAt: string;
+    createdAt?: string;
+    updatedAt?: string;
 }
 
 export interface AuthState {

@@ -4,7 +4,7 @@
  * Type-safe validation helpers for API responses and forms.
  */
 
-import { z, type ZodSchema, type ZodError } from 'zod';
+import { type ZodSchema, type ZodError } from 'zod';
 
 /**
  * Result type for validation operations
@@ -55,7 +55,7 @@ export function validateOrThrow<T>(
 export function formatZodErrors(error: ZodError): Record<string, string> {
     const formattedErrors: Record<string, string> = {};
 
-    error.errors.forEach((err) => {
+    (error as any).errors.forEach((err: any) => {
         const path = err.path.join('.');
         if (path && !formattedErrors[path]) {
             formattedErrors[path] = err.message;

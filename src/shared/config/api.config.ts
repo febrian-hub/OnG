@@ -6,8 +6,8 @@
  */
 
 export const API_CONFIG = {
-    baseURL: import.meta.env.VITE_API_BASE_URL || '/api/v1',
-    timeout: Number(import.meta.env.VITE_API_TIMEOUT) || 30000,
+    baseURL: import.meta.env['VITE_API_BASE_URL'] || '/api/v1',
+    timeout: Number(import.meta.env['VITE_API_TIMEOUT']) || 30000,
 
     endpoints: {
         // Auth endpoints

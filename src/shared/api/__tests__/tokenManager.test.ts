@@ -53,8 +53,8 @@ describe('tokenManager', () => {
             tokenManager.setTokens('secret-token');
 
             // Verify token is not accessible via common attack vectors
-            expect((window as Record<string, unknown>)['accessToken']).toBeUndefined();
-            expect((window as Record<string, unknown>)['tokenStore']).toBeUndefined();
+            expect((window as unknown as Record<string, unknown>)['accessToken']).toBeUndefined();
+            expect((window as unknown as Record<string, unknown>)['tokenStore']).toBeUndefined();
         });
     });
 });

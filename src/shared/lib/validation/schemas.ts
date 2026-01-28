@@ -38,7 +38,7 @@ export const dateStringSchema = z.string().datetime('Invalid date format');
 export const apiErrorSchema = z.object({
     message: z.string(),
     code: z.string().optional(),
-    errors: z.record(z.string()).optional(),
+    errors: z.record(z.string(), z.string()).optional(),
 });
 
 export const paginationSchema = z.object({
